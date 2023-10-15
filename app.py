@@ -13,12 +13,12 @@ def home():
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     # Profile image file
-    with open("assets/mypic.jpeg", "rb") as img_file:
+    with open("assets/kk.jpg", "rb") as img_file:
         img = "data:image/png;base64," + \
             base64.b64encode(img_file.read()).decode()
 
     # PDF CV file
-    with open(r"assets/Resume - Krishna Kanhaiya.pdf", "rb") as pdf_file:
+    with open(r"assets/my_cv.pdf", "rb") as pdf_file:
         pdf_bytes = pdf_file.read()
 
     # Top title
